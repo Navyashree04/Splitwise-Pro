@@ -1,0 +1,16 @@
+:root{--ink:#12202F;--mute:#5E6B7A;--bg:#EDF1F6;--card:#fff;--line:#DCE3EC;--acc:#2F5BFF;--pos:#0E9F6E;--neg:#D93A41;--r:14px}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{margin:0;letter-spacing:-.02em}h1{font-size:28px;font-weight:800}h2{font-size:18px;font-weight:700}
+button,input,select{font:inherit}input,select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff}
+button{border:0;border-radius:10px;padding:10px 16px;background:var(--acc);color:#fff;font-weight:700;cursor:pointer}button.ghost{background:#E6ECFF;color:var(--acc)}button.danger{background:#FDE8E9;color:var(--neg)}
+button:disabled{opacity:.5}:focus-visible{outline:3px solid #9DB3FF;outline-offset:2px}
+.shell{max-width:1000px;margin:0 auto;padding:16px}nav{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:20px}nav b{font-size:18px;margin-right:auto;font-weight:800}
+nav button{background:transparent;color:var(--mute)}nav button.on{background:#fff;color:var(--ink)}
+.hero{background:var(--ink);color:#fff;border-radius:20px;padding:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.hero small{opacity:.7}.hero .big{font-size:38px;font-weight:800;letter-spacing:-.03em}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}.card{background:var(--card);border-radius:var(--r);padding:18px;border:1px solid var(--line)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.row:last-child{border:0}
+.pos{color:var(--pos);font-weight:700}.neg{color:var(--neg);font-weight:700}.mute{color:var(--mute);font-size:13px}.gap{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.stack>*+*{margin-top:12px}
+.err{background:#FDE8E9;color:var(--neg);padding:10px 12px;border-radius:10px}.tag{padding:2px 8px;border-radius:99px;font-size:12px;font-weight:700}.veg{background:#DDF5EA;color:var(--pos)}.non-veg{background:#FDE8E9;color:var(--neg)}.unknown{background:#EEF1F5;color:var(--mute)}
+.bar{height:10px;border-radius:6px;background:var(--acc);min-width:4px}.auth{max-width:380px;margin:10vh auto}.chips label{display:flex;gap:6px;align-items:center;background:#F3F6FA;border-radius:99px;padding:4px 10px}.chips input{width:auto}
+@media(max-width:600px){h1{font-size:23px}.hero .big{font-size:30px}}
